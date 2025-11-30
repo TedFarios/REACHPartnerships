@@ -176,6 +176,15 @@
             background: var(--color-teal-dark) !important;
         }
         
+        .nav-access {
+            color: var(--color-terracotta) !important;
+            font-weight: 600 !important;
+        }
+        
+        .nav-access:hover {
+            color: var(--color-teal) !important;
+        }
+        
         /* Hero */
         .hero {
             min-height: 100vh;
@@ -422,7 +431,185 @@
             margin: 0 auto;
         }
         
-        /* Ecosystem */
+        /* Ecosystem Hero Section */
+        .ecosystem-hero {
+            background: linear-gradient(180deg, var(--color-teal) 0%, var(--color-teal-dark) 100%);
+            color: white;
+            padding: var(--space-2xl) 0;
+        }
+        
+        .ecosystem-hero h2 {
+            color: white;
+            text-align: center;
+        }
+        
+        .ecosystem-hero .ecosystem-intro {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            max-width: 600px;
+            margin: 0 auto var(--space-xl);
+        }
+        
+        /* REACH Access Feature */
+        .access-feature {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: var(--space-xl);
+            margin-bottom: var(--space-xl);
+            align-items: center;
+        }
+        
+        .access-feature-badge {
+            display: inline-block;
+            background: var(--color-terracotta);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .access-feature h3 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: white;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .access-feature p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: var(--space-md);
+            max-width: none;
+        }
+        
+        .access-highlights {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .access-highlights li {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.85);
+        }
+        
+        .btn--access {
+            background: white;
+            color: var(--color-teal) !important;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s ease;
+        }
+        
+        .btn--access:hover {
+            background: var(--color-cream);
+            transform: translateY(-2px);
+        }
+        
+        /* Mockup visual */
+        .access-mockup {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .mockup-header {
+            background: var(--color-stone);
+            padding: 0.75rem 1rem;
+            display: flex;
+            gap: 0.4rem;
+        }
+        
+        .mockup-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--color-text-muted);
+        }
+        
+        .mockup-content {
+            padding: var(--space-md);
+        }
+        
+        .mockup-search {
+            background: var(--color-cream);
+            border: 1px solid var(--color-stone);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            font-size: 0.9rem;
+            color: var(--color-text);
+            margin-bottom: var(--space-md);
+        }
+        
+        .mockup-response {
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+        }
+        
+        .mockup-response p {
+            margin-bottom: 0.5rem;
+            color: var(--color-text-secondary);
+        }
+        
+        /* Ecosystem grid in hero */
+        .ecosystem-hero .ecosystem-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-lg);
+        }
+        
+        .ecosystem-hero .eco-card {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .ecosystem-hero .eco-card h3 {
+            color: white;
+        }
+        
+        .ecosystem-hero .eco-badge {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+        
+        .eco-description {
+            color: rgba(255,255,255,0.85);
+            font-size: 0.95rem;
+            margin-bottom: var(--space-md);
+            max-width: none;
+        }
+        
+        .eco-link {
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .eco-link:hover {
+            text-decoration: underline;
+        }
+        
+        .ecosystem-hero .eco-icon {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .ecosystem-hero .eco-card-header {
+            border-bottom-color: rgba(255,255,255,0.2);
+        }
+        
+        /* Original Ecosystem */
         .ecosystem {
             background: var(--color-warm-white);
         }
@@ -706,6 +893,18 @@
                 grid-template-columns: 1fr;
             }
             
+            .access-feature {
+                grid-template-columns: 1fr;
+            }
+            
+            .access-feature-visual {
+                order: -1;
+            }
+            
+            .ecosystem-hero .ecosystem-grid {
+                grid-template-columns: 1fr;
+            }
+            
             .process-steps {
                 grid-template-columns: 1fr 1fr;
                 gap: var(--space-lg);
@@ -727,6 +926,10 @@
             
             .nav-links {
                 display: none;
+            }
+            
+            .access-highlights {
+                grid-template-columns: 1fr;
             }
             
             .process-steps {
@@ -758,10 +961,10 @@
                 REACH Partnerships
             </a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="#ecosystem">Ecosystem</a></li>
                 <li><a href="#fellowship">Fellowship</a></li>
                 <li><a href="#sponsors">Sponsors</a></li>
-                <li><a href="#ecosystem">Platform</a></li>
+                <li><a href="https://access.reachpartnerships.org" class="nav-access">REACH Access →</a></li>
                 <li><a href="#contact" class="nav-cta">Get Involved</a></li>
             </ul>
         </div>
@@ -780,6 +983,83 @@
                     <a href="#sponsors" class="btn btn--secondary">Become a Sponsor</a>
                 </div>
                 <p class="tagline">"With every move, we make a difference."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- REACH Ecosystem - Prominent placement -->
+    <section class="ecosystem-hero" id="ecosystem">
+        <div class="container">
+            <h2>The REACH Ecosystem</h2>
+            <p class="ecosystem-intro">
+                Three interconnected platforms supporting medical trainees at every stage of their journey.
+            </p>
+            
+            <!-- Featured: REACH Access -->
+            <div class="access-feature">
+                <div class="access-feature-content">
+                    <div class="access-feature-badge">🌐 Free Public Resource</div>
+                    <h3>REACH Access</h3>
+                    <p>
+                        Your starting point for medical career guidance. AI-powered answers to questions about K-awards, relocation, career planning, and institutional resources—built from real trainee experiences.
+                    </p>
+                    <ul class="access-highlights">
+                        <li>✓ K-award preparation guides</li>
+                        <li>✓ Relocation planning resources</li>
+                        <li>✓ Vetted service provider directory</li>
+                        <li>✓ AI assistant for instant answers</li>
+                    </ul>
+                    <a href="https://access.reachpartnerships.org" class="btn btn--access">Explore REACH Access →</a>
+                </div>
+                <div class="access-feature-visual">
+                    <div class="access-mockup">
+                        <div class="mockup-header">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-search">
+                                <span>🔍</span> How do I prepare for a K23 application?
+                            </div>
+                            <div class="mockup-response">
+                                <p><strong>Here's a guide to K23 preparation:</strong></p>
+                                <p>1. Identify your research question and target population...</p>
+                                <p>2. Secure a primary mentor with K-award experience...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other platforms -->
+            <div class="ecosystem-grid">
+                <div class="eco-card eco-card--foundation">
+                    <div class="eco-card-header">
+                        <div class="eco-icon">🏛</div>
+                        <div>
+                            <h3>REACH Partnerships</h3>
+                            <div class="eco-badge">Foundation</div>
+                        </div>
+                    </div>
+                    <p class="eco-description">
+                        The 501(c)(3) nonprofit providing fellowship awards, sponsor relationships, and governance. The operational backbone of REACH.
+                    </p>
+                    <a href="#about" class="eco-link">Learn about our mission →</a>
+                </div>
+                <div class="eco-card eco-card--exchange">
+                    <div class="eco-card-header">
+                        <div class="eco-icon">⚡</div>
+                        <div>
+                            <h3>REACH Exchange</h3>
+                            <div class="eco-badge">Internal Platform</div>
+                        </div>
+                    </div>
+                    <p class="eco-description">
+                        Where fellows track progress, sponsors manage engagement, and data transforms into insights. The intelligence engine powering everything.
+                    </p>
+                    <a href="#fellowship" class="eco-link">Apply for fellowship →</a>
+                </div>
             </div>
         </div>
     </section>
@@ -878,62 +1158,6 @@
         </div>
     </section>
 
-    <section class="ecosystem" id="ecosystem">
-        <div class="container">
-            <h2>The REACH Ecosystem</h2>
-            <p class="ecosystem-intro">
-                Three interconnected platforms supporting medical trainees, sponsors, and the broader research community.
-            </p>
-            <div class="ecosystem-grid">
-                <div class="eco-card eco-card--foundation">
-                    <div class="eco-card-header">
-                        <div class="eco-icon">🏛</div>
-                        <div>
-                            <h3>REACH Partnerships</h3>
-                            <div class="eco-badge">Foundation</div>
-                        </div>
-                    </div>
-                    <ul class="eco-features">
-                        <li><span class="check">✓</span> 501(c)(3) nonprofit organization</li>
-                        <li><span class="check">✓</span> Fellowship awards and governance</li>
-                        <li><span class="check">✓</span> Sponsor relationship management</li>
-                        <li><span class="check">✓</span> Impact reporting and accountability</li>
-                    </ul>
-                </div>
-                <div class="eco-card eco-card--exchange">
-                    <div class="eco-card-header">
-                        <div class="eco-icon">⚡</div>
-                        <div>
-                            <h3>REACH Exchange</h3>
-                            <div class="eco-badge">Internal Platform</div>
-                        </div>
-                    </div>
-                    <ul class="eco-features">
-                        <li><span class="check">✓</span> Fellowship survey and tracking system</li>
-                        <li><span class="check">✓</span> Weekly check-in interface</li>
-                        <li><span class="check">✓</span> Sponsor management engine</li>
-                        <li><span class="check">✓</span> Marketing content generation</li>
-                    </ul>
-                </div>
-                <div class="eco-card eco-card--access">
-                    <div class="eco-card-header">
-                        <div class="eco-icon">🌐</div>
-                        <div>
-                            <h3>REACH Access</h3>
-                            <div class="eco-badge">Public Knowledge Base</div>
-                        </div>
-                    </div>
-                    <ul class="eco-features">
-                        <li><span class="check">✓</span> SEO-optimized trainee resources</li>
-                        <li><span class="check">✓</span> AI-powered guidance (RAG)</li>
-                        <li><span class="check">✓</span> Sponsor recommendations</li>
-                        <li><span class="check">✓</span> Lead generation for partners</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="fellowship" id="fellowship">
         <div class="container">
             <div class="fellowship-grid">
@@ -1025,18 +1249,7 @@
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="mailto:info@reachpartnerships.org">info@reachpartnerships.org</a></li>
-                        <li><a href="mailto:fellowships@reachpartnerships.org">fellowships@reachpartnerships.org</a></li>
-                        <li><a href="mailto:sponsors@reachpartnerships.org">sponsors@reachpartnerships.org</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 REACH Partnerships Foundation. All rights reserved.</p>
-                <p>Atlanta, Georgia</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+                        <li><a href="/cdn-cgi/l/email-protection#325b5c545d72405753515a425340465c5740415a5b42411c5d4055"><span class="__cf_email__" data-cfemail="e980878f86a99b8c888a8199889b9d878c9b9a8180999ac7869b8e">[email&#160;protected]</span></a></li>
+                        <li><a href="/cdn-cgi/l/email-protection#7711121b1b1800041f1e070437051216141f07160503191205041f1e070459180510"><span class="__cf_email__" data-cfemail="a9cfccc5c5c6dedac1c0d9dae9dbccc8cac1d9c8dbddc7ccdbdac1c0d9da87c6dbce">[email&#160;protected]</span></a></li>
+                        <li><a href="/cdn-cgi/l/email-protection#c9bab9a6a7baa6bbba89bbaca8aaa1b9a8
 
